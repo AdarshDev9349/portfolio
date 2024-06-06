@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Gugi&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap');
 
 
 body{
@@ -89,7 +89,7 @@ border-radius: 7.5px;
 color: white;
 background-color: rgba(255, 255, 255, 0.049);
 font-family: 'gugi';
-  }
+}
 
 .home .button2{
 width: 180px;
@@ -98,4 +98,51 @@ background: #FFFFFF;
 border-radius: 7.5px;
 
 
-  }
+}
+
+/* hackathon */
+.hack{
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-family: 'gugi';
+  gap: 100px;
+  margin: 160px;
+}
+.hack .mine{
+
+  width: 500px;
+}
+.hack .details h1{
+  font-size: 41px;
+  font-family: 'bakbak one';
+  font-weight: 100;
+}
+
+.hack .details p{
+  font-size: 14px;
+  line-height: 28px;
+  text-align: justify;
+  padding-right: 80px;
+}
+.hack .details ul{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  gap: 10px;
+  padding: 0;
+  
+
+}
+.hack .details img{
+  width: 35px;
+  height: 40px;
+  
+}
+
+.details li{
+  display: flex;
+  align-items: center ;
+  gap: 20px;
+}
