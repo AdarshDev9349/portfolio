@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Gugi&display=swap');
+
+
+
+body{
+    background-color: rgb(0, 0, 0);
+    margin:0;
+}
+
+/*Navbar*/
+
+.navbar{
+   
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   
+
+}
+.nav-menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 43%;
+    padding: 20px;
+    font-family: 'Courier New', Courier, monospace;
+  
+    gap: 20px;
+    font-family: 'oxanium';
+  }
+  
+.nav-menu img{
+    width: 230px;
+  }
+  
+.nav-link {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #ffffff;
+    transition: all ease-in-out 0.2s;
+    text-decoration: none;
+    font-family: 'gugi';
+  }
+  
+.nav-link:hover {
+    letter-spacing: 0.5px;
+  }
+.navbar button{ 
+       padding: 12px 24px;
+       border-radius: 08px;
+       background: linear-gradient(90deg, #FF0D07 0%, #FF0359 100%);
+       border: 0;
+       cursor: pointer;
+  }
+.navbar button:hover{
+    transform: scale(1);
+
+  }
+
+
+  /*landing*/
+.home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.home img{
+    width: 95%;
+    overflow: hidden;
+   
+  }
+
+.home .button-container{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    position: absolute;
+    gap: 49px;
+    top: 545px;
+    
+}  
+
+.home .button1{
+box-sizing: border-box;
+width: 180px;
+height: 54px;
+border: 3px solid #FFFFFF;
+border-radius: 7.5px;
+color: white;
+background-color: rgba(255, 255, 255, 0.049);
+font-family: 'gugi';
+  }
+
+.home .button2{
+width: 180px;
+height: 54px;
+background: #FFFFFF;
+border-radius: 7.5px;
+
+
+  }
