@@ -165,15 +165,17 @@ cursor: pointer;
 }
 
 /* timeline */
+.timelineContainer {
+  position: relative;
+  height: 400vh;
+  overflow: clip;
+}
 
-.time-line{
-
-   width: 100%;
-   height: 500px;
-   overflow: hidden;
-   display: flex;
-   justify-content: flex-start;
-
+.time-line {
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
 }
 .time-line hr{
   border: 4px dashed rgba(255, 255, 255, 0.242);
@@ -219,7 +221,7 @@ cursor: pointer;
   width: 50px;
   height: 50px;
   background-color: rgb(98, 93, 93);
-  position: relative;
+  position: absolute;
   z-index: 2;
   display: flex;
   align-items: center;
@@ -229,7 +231,11 @@ cursor: pointer;
   font-family: 'bakbak one';
   border-radius: 3px;
 }
-.time-line .box:nth-child(2){
+.time-line .text{
+  position: absolute;
+  max-width: 30ch;
+}
+/* .time-line .box:nth-child(2){
   top: 80px;
   background: linear-gradient(90deg, #FF0D07 0%, #FF0359 100%);
   border-radius: 2px;
@@ -246,7 +252,7 @@ cursor: pointer;
 .time-line .box:nth-child(8){
   top: 250px;
    
-}
+} */
 
 
 
