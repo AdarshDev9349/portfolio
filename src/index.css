@@ -51,6 +51,7 @@ body{
        background: linear-gradient(90deg, #FF0D07 0%, #FF0359 100%);
        border: 0;
        cursor: pointer;
+       color: white;
   }
 .navbar button:hover{
     transform: scale(1);
@@ -89,6 +90,7 @@ border-radius: 7.5px;
 color: white;
 background-color: rgba(255, 255, 255, 0.049);
 font-family: 'gugi';
+cursor: pointer;
 }
 
 .home .button2{
@@ -96,6 +98,7 @@ width: 180px;
 height: 54px;
 background: #FFFFFF;
 border-radius: 7.5px;
+cursor: pointer;
 
 
 }
@@ -176,10 +179,6 @@ border-radius: 7.5px;
   border: 4px dashed rgba(255, 255, 255, 0.242);
   border-radius: 0;
   height: 350px;
-  
-  border-image: initial;
-
-  
   position: relative;
   
 }
@@ -192,9 +191,10 @@ border-radius: 7.5px;
 
 
 
+
 .time-line  hr:nth-child(1){
     transform: rotate(60deg);
-    border-color: red;
+     
 }
 .time-line  hr:nth-child(3){
   transform: rotate(120deg);
@@ -207,7 +207,14 @@ border-radius: 7.5px;
 }
 .time-line  hr:nth-child(9){
   transform: rotate(60deg);
+  
 }
+
+.progress{
+
+  background-color: #FF0359;
+}
+
 .time-line .box{
   width: 50px;
   height: 50px;
@@ -239,4 +246,120 @@ border-radius: 7.5px;
 .time-line .box:nth-child(8){
   top: 250px;
    
+}
+
+
+
+
+
+
+/*sponsor us*/
+
+/*why sponsor us?"*/
+
+
+
+
+
+.section-hero {
+  display: flex;
+  align-items: center;
+ 
+  gap: 150px; /* Gap between image and text */
+  margin: 100px 180px 100px 0;
+}
+
+.section-hero img {
+  margin-left: 0px;
+  width: 517px;
+  height: auto;
+}
+
+.section-hero h1 {
+  font-size: 41px;
+  font-weight: 100;
+  font-family: 'bakbak one';
+  color: #ffffff;
+}
+
+.section-hero span {
+  font-size: 41px;
+  font-weight: 100;
+  color: red;
+  
+}
+.section-hero .text p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #ffffff;
+  font-family: 'gugi';
+  text-align: justify;
+  line-height: 28px;
+}
+
+.button {
+
+  padding: 10px 20px;
+  background-color: #ffffffdd;
+  color: black;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  font-family: 'gugi';
+}
+
+
+/* perks */
+
+
+
+.section-perks {
+  display: flex;
+  align-items: center;
+  margin: 100px 0 100px 180px;
+  gap: 100px; /* Gap between image and perk list */
+  color: white;
+  font-family: 'bakbak one';
+  text-align: justify;
+}
+
+.perk-list h1 {
+  text-align: left;
+  font-size: 41px;
+  font-weight: 100;
+
+
+
+}
+.perk-list h1 span {
+  font-size: 41px;
+  font-weight: 100;
+  color: red;
+
+
+}
+.perk {
+  margin-bottom: 20px;
+}
+
+.perk h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: 100;
+ 
+  
+}
+
+.perk p {
+  font-size: 14px;
+  line-height: 1.6;
+  font-family: 'gugi';
+
+}
+
+.perk-img {
+  margin-left: 20px;
+  width: 500px;
+  height: auto;
 }

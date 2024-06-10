@@ -1,18 +1,18 @@
 
-import logo from './logo/logo.svg'
-const Navbar = () => {
- 
+import React from 'react';
+import logo from './logo/logo.svg';
+
+
+const Navbar = ({ menuItems }) => {
   return (
     <nav className="navbar">
-     
       <ul className='nav-menu'>
-       <a href="" className="nav-logo  no-space"><img src={logo} alt="Logo" /></a>
-     
-        <li className="nav-item"><a href="" className="nav-link">Overview</a></li>
-        <li className="nav-item"><a href="#" className="nav-link">Stacks we offer</a></li>
-       
-        <li className="nav-item"><a href="#" className="nav-link">sponsors</a></li>
-        <li className="nav-item"><a href="#" className="nav-link">FAQ</a></li>
+        <a href="" className="nav-logo no-space"><img src={logo} alt="Logo" /></a>
+        {menuItems.map((item, index) => (
+          <li key={index} className="nav-item">
+            <a href={item.href} className="nav-link">{item.text}</a>
+          </li>
+        ))}
       </ul>
       <button>Contact us</button>
     </nav>
