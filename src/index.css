@@ -1,173 +1,196 @@
-@import url('https://fonts.googleapis.com/css2?family=Gugi&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Gugi&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap");
 
-
-body{
-    background-color: rgb(0, 0, 0);
-    margin:0;
+body {
+  background-color: rgb(0, 0, 0);
+  margin: 0;
+  font-size: 1rem;
+}
+.bgimage {
+  background-image: url(./components/images/backg.svg);
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
 }
 
 /*Navbar*/
 
-.navbar{
-   
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-   
-
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 70px;
+  background-color: #000000b7;
 }
 .nav-menu {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 43%;
-    padding: 20px;
-    font-family: 'Courier New', Courier, monospace;
-  
-    gap: 20px;
-    font-family: 'oxanium';
-  }
-  
-.nav-menu img{
-    width: 230px;
-  }
-  
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  width: 100%;
+  margin-right: 200px;
+  padding: 0.7rem;
+  gap: 6.8rem;
+  position: inherit;
+  top: inherit;
+  list-style: none;
+}
+
+.nav-menu img {
+  width: 100%;
+  max-width: 230px;
+  position: fixed;
+  top: 20px;
+
+  left: 5%;
+}
+
 .nav-link {
-    font-size: 1rem;
-    font-weight: 500;
-    color: #ffffff;
-    transition: all ease-in-out 0.2s;
-    text-decoration: none;
-    font-family: 'gugi';
-  }
-  
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #ffffff;
+  transition: all ease-in-out 0.2s;
+  text-decoration: none;
+  font-family: "gugi";
+}
+
 .nav-link:hover {
-    letter-spacing: 0.5px;
-  }
-.navbar button{ 
-       padding: 12px 24px;
-       border-radius: 08px;
-       background: linear-gradient(90deg, #FF0D07 0%, #FF0359 100%);
-       border: 0;
-       cursor: pointer;
-       color: white;
-  }
-.navbar button:hover{
-    transform: scale(1);
-
-  }
-
-
-  /*landing*/
-.home{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  letter-spacing: 0.5px;
 }
-.home img{
-    width: 95%;
-    overflow: hidden;
-   
-  }
-
-.home .button-container{
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    position: absolute;
-    gap: 49px;
-    top: 545px;
-    
-}  
-
-.home .button1{
-box-sizing: border-box;
-width: 180px;
-height: 54px;
-border: 3px solid #FFFFFF;
-border-radius: 7.5px;
-color: white;
-background-color: rgba(255, 255, 255, 0.049);
-font-family: 'gugi';
-cursor: pointer;
+.navbar button {
+  padding: 12px 24px;
+  border-radius: 08px;
+  background: linear-gradient(90deg, #ff0d07 0%, #ff0359 100%);
+  border: 0;
+  cursor: pointer;
+  color: white;
+}
+.navbar button:hover {
+  transform: scale(1);
 }
 
-.home .button2{
-width: 180px;
-height: 54px;
-background: #FFFFFF;
-border-radius: 7.5px;
-cursor: pointer;
+/*landing*/
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
+.home .button-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  position: absolute;
+  gap: 3rem;
+  top: 35rem;
+  right: 23%;
+}
 
+.home img {
+  position: absolute;
+  top: 14rem;
+  width: 600px;
+}
+.home h1 {
+  font-size: 4rem;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  gap: 1rem;
+  top: 14rem;
+  color: #fff;
+  font-family: "bakbak one";
+  font-weight: 100;
+  text-shadow: 0px 0px 8px #000000;
+}
+.home .button1 {
+  box-sizing: border-box;
+  width: 11.25rem;
+  height: 3.375rem;
+  border: 0.188rem solid #ffffff;
+  border-radius: 0.469rem;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.049);
+  font-family: "gugi";
+  cursor: pointer;
+}
+
+.home .button2 {
+  width: 11.25rem;
+  height: 3.375rem;
+  background: #ffffff;
+  border-radius: 0.469rem;
+  cursor: pointer;
 }
 
 /* hackathon */
-.hack{
+.hack {
   display: flex;
   justify-content: center;
   color: white;
-  font-family: 'gugi';
+  font-family: "gugi";
   gap: 100px;
-  margin: 160px;
+  gap: 3rem; /* Relative gap */
+  margin: 8rem;
 }
-.hack .mine{
-
-  width: 500px;
+.hack .mine {
+  width: 100%;
+  max-width: 500px;
 }
-.hack .details h1{
-  font-size: 41px;
-  font-family: 'bakbak one';
+.hack .details h1 {
+  font-size: 2.563rem;
+  font-family: "bakbak one";
   font-weight: 100;
 }
 
-.hack .details p{
-  font-size: 14px;
-  line-height: 28px;
+.hack .details p {
+  font-size: 0.875rem;
+  line-height: 1.75rem;
   text-align: justify;
-  padding-right: 80px;
+  padding-right: 5rem;
 }
-.hack .details ul{
+.hack .details ul {
   list-style: none;
   display: flex;
   flex-direction: column;
   justify-content: end;
-  gap: 10px;
+  gap: 0.625rem;
   padding: 0;
-  
-
 }
-.hack .details img{
-  width: 35px;
-  height: 40px;
-  
+.hack .details img {
+  width: 2.188rem;
+  height: 2.5rem;
 }
 
-.details li{
+.details li {
   display: flex;
-  align-items: center ;
-  gap: 20px;
+  align-items: center;
+  gap: 1.25rem;
 }
 
 /* logos */
 
-.logos{
+.logos {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  gap: 80px;
-  
+  gap: 7rem;
+  margin: 12.5rem 1rem;
 }
 
-.logos img{
-  width: 200px;
+.logos img {
+  width: 100%;
+  max-width: 230px;
   cursor: pointer;
 }
 
 /* timeline */
 .timelineContainer {
   position: relative;
-  height: 400vh;
+  height: 700vmax;
   overflow: clip;
 }
 
@@ -177,47 +200,30 @@ cursor: pointer;
   display: flex;
   justify-content: flex-start;
 }
-.time-line hr{
+.time-line hr {
   border: 4px dashed rgba(255, 255, 255, 0.242);
   border-radius: 0;
   height: 350px;
   position: relative;
-  
 }
 
-
-
-
-
-
-
-
-
-
-.time-line  hr:nth-child(1){
-    transform: rotate(60deg);
-     
-}
-.time-line  hr:nth-child(3){
-  transform: rotate(120deg);
-}
-.time-line  hr:nth-child(5){
+.time-line hr:nth-child(1) {
   transform: rotate(60deg);
 }
-.time-line  hr:nth-child(7){
+.time-line hr:nth-child(3) {
   transform: rotate(120deg);
 }
-.time-line  hr:nth-child(9){
+.time-line hr:nth-child(5) {
   transform: rotate(60deg);
-  
+}
+.time-line hr:nth-child(7) {
+  transform: rotate(120deg);
+}
+.time-line hr:nth-child(9) {
+  transform: rotate(60deg);
 }
 
-.progress{
-
-  background-color: #FF0359;
-}
-
-.time-line .box{
+.time-line .box {
   width: 50px;
   height: 50px;
   background-color: rgb(98, 93, 93);
@@ -228,10 +234,10 @@ cursor: pointer;
   justify-content: center;
   color: #ffffff;
   font-size: 40px;
-  font-family: 'bakbak one';
+  font-family: "bakbak one";
   border-radius: 3px;
 }
-.time-line .text{
+.time-line .text {
   position: absolute;
   max-width: 30ch;
 }
@@ -254,29 +260,21 @@ cursor: pointer;
    
 } */
 
-
-
-
-
-
 /*sponsor us*/
 
 /*why sponsor us?"*/
 
-
-
-
-
 .section-hero {
   display: flex;
   align-items: center;
- 
+
   gap: 150px; /* Gap between image and text */
   margin: 100px 180px 100px 0;
 }
 
 .section-hero img {
-  margin-left: 0px;
+  margin-left: 50px;
+  margin-top: 50px;
   width: 517px;
   height: auto;
 }
@@ -284,7 +282,7 @@ cursor: pointer;
 .section-hero h1 {
   font-size: 41px;
   font-weight: 100;
-  font-family: 'bakbak one';
+  font-family: "bakbak one";
   color: #ffffff;
 }
 
@@ -292,19 +290,17 @@ cursor: pointer;
   font-size: 41px;
   font-weight: 100;
   color: red;
-  
 }
 .section-hero .text p {
   font-size: 16px;
   line-height: 1.6;
   color: #ffffff;
-  font-family: 'gugi';
+  font-family: "gugi";
   text-align: justify;
   line-height: 28px;
 }
 
 .button {
-
   padding: 10px 20px;
   background-color: #ffffffdd;
   color: black;
@@ -312,13 +308,10 @@ cursor: pointer;
   cursor: pointer;
   font-size: 16px;
   border-radius: 5px;
-  font-family: 'gugi';
+  font-family: "gugi";
 }
 
-
 /* perks */
-
-
 
 .section-perks {
   display: flex;
@@ -326,7 +319,7 @@ cursor: pointer;
   margin: 100px 0 100px 180px;
   gap: 100px; /* Gap between image and perk list */
   color: white;
-  font-family: 'bakbak one';
+  font-family: "bakbak one";
   text-align: justify;
 }
 
@@ -334,16 +327,12 @@ cursor: pointer;
   text-align: left;
   font-size: 41px;
   font-weight: 100;
-
-
-
+  margin-bottom: 40px;
 }
 .perk-list h1 span {
   font-size: 41px;
   font-weight: 100;
   color: red;
-
-
 }
 .perk {
   margin-bottom: 20px;
@@ -353,19 +342,273 @@ cursor: pointer;
   font-size: 20px;
   margin-bottom: 10px;
   font-weight: 100;
- 
-  
 }
 
 .perk p {
   font-size: 14px;
   line-height: 1.6;
-  font-family: 'gugi';
-
+  font-family: "gugi";
+  text-align: justify;
+  width: 500px;
 }
 
 .perk-img {
   margin-left: 20px;
   width: 500px;
   height: auto;
+}
+
+/* stacks*/
+.stacks {
+  margin: 150px;
+  margin-top: 0;
+}
+
+.stacks .heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.stacks button {
+  box-sizing: border-box;
+  width: 150px;
+  height: 44px;
+  border: 3px solid #ffffff;
+  border-radius: 7.5px;
+  color: rgb(255, 255, 255);
+  background-color: rgba(0, 0, 0, 0.464);
+  font-family: "gugi";
+  cursor: pointer;
+}
+
+.stacks-each {
+  display: flex;
+  justify-content: space-between;
+
+  margin-top: 50px;
+}
+
+.stacks p {
+  color: white;
+}
+.stacks-each .each-stack {
+  width: 240px;
+  height: 240px;
+  background-color: rgba(255, 255, 255, 0.082);
+  border-radius: 20px;
+}
+
+/* faq*/
+
+.faq-container {
+  background-color: #000;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  max-width: 100%;
+  margin: 200px;
+  margin-top: 0;
+  font-family: "gugi";
+}
+
+.faq-item {
+  border: 1px solid #444;
+  margin: 10px 0;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.faq-question {
+  background-color: #333;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.faq-answer {
+  background-color: #222;
+  padding: 15px;
+}
+
+.faq-footer {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.faq-footer h2 {
+  margin-bottom: 10px;
+  font-family: "bakbak one";
+  font-weight: 100;
+}
+
+.faq-footer p {
+  margin-bottom: 20px;
+  font-family: "gugi";
+}
+
+.faq-footer button {
+  box-sizing: border-box;
+  width: 180px;
+  height: 54px;
+  border: 3px solid #ffffff;
+  border-radius: 7.5px;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.049);
+  font-family: "gugi";
+  cursor: pointer;
+}
+
+.faq-footer button:hover {
+  background-color: #000000;
+}
+/*footer*/
+
+.footer {
+  background-color: #181818;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  align-items: center;
+}
+
+.footer h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-family: "bakbak one";
+  font-weight: 100;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+  font-family: "gugi";
+}
+
+.footer ul li {
+  margin-bottom: 10px;
+  font-size: 13px;
+}
+
+.footer ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  border-top: 1px solid #444;
+}
+
+.footer-bottom a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-bottom a:hover {
+  text-decoration: underline;
+}
+.footer img {
+  width: 230px;
+}
+
+/*contibute*/
+
+.support-container {
+  background-color: #000;
+  color: #fff;
+  margin: 100px;
+  text-align: center;
+}
+
+.support-container .highlight {
+  color: #ff0000;
+}
+
+.support-sections {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 40px;
+}
+
+.support-section {
+  background-color: #1e1e1e;
+  padding: 20px;
+  border-radius: 8px;
+  width: 300px;
+}
+
+.support-section h3 {
+  margin-bottom: 25px;
+  font-family: "bakbak one";
+  font-weight: 100;
+}
+
+.support-section p {
+  margin: 19px;
+  font-family: "gugi";
+  font-size: 11px;
+  line-height: 19px;
+  text-align: justify;
+}
+
+/*connect*/
+.connect-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.text-container {
+  max-width: 600px;
+}
+.text-container h1 {
+  font-size: 41px;
+  color: red;
+  font-family: "Bakbak One";
+  font-weight: 100;
+}
+.text-container p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #ffffff;
+  font-family: "gugi";
+  text-align: justify;
+  line-height: 28px;
+}
+.contact-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 400px;
+}
+.contact-item {
+  margin-right: 16px;
+}
+.contact-item strong {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+.instagram-icon {
+  color: #fff;
+  text-decoration: none;
+  font-size: 2em;
+}
+.connect-image {
+  height: 400px;
 }

@@ -1,4 +1,5 @@
 import { useState } from "react";
+
 import Navbar from "./components/navbar";
 import Homepage from "./components/landing";
 import Hackathon from "./components/hackathon";
@@ -8,8 +9,10 @@ import gdsc from "./components/logo/gdsc.png";
 import ieee from "./components/logo/ieee.png";
 import Timeline from "./components/timeline";
 import Sponsorus from "./sponsorus";
+import FAQ from "./components/faq";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./index.css";
+import Footer from "./components/footer";
 const menuItems = [
   { href: "", text: "Overview" },
   { href: "#", text: "Stacks we offer" },
@@ -27,8 +30,10 @@ function App() {
             path="/"
             element={
               <>
+                <div className="bgimage"> </div>
                 <Navbar menuItems={menuItems} />
-                <Homepage />
+               
+                <Homepage/>
                 <Hackathon />
                 <div className="logos">
                   <img src={renvnza} alt="Renvnza" />
@@ -37,6 +42,9 @@ function App() {
                   <img src={ieee} alt="IEEE Ucek" />
                 </div>
                   <Timeline />
+                  <FAQ/>
+                  <Footer/>
+                
               </>
             }
           />

@@ -126,7 +126,7 @@ const Timeline = () => {
           <motion.p
             className="text"
             style={{
-              top: "25%",
+              top: "28%",
               left: "15%",
               color: textColor1,
             }}
@@ -142,7 +142,7 @@ const Timeline = () => {
           <motion.p
             className="text"
             style={{
-              top: "0%",
+              top: "-5%",
               left: "35%",
               color: textColor2,
             }}
@@ -159,7 +159,7 @@ const Timeline = () => {
             className="text"
             style={{
               position: "absolue",
-              top: "25%",
+              top: "28%",
               left: "55%",
               color: textColor3,
             }}
@@ -176,12 +176,12 @@ const Timeline = () => {
             className="text"
             style={{
               position: "absolue",
-              top: "0%",
+              top: "-5%",
               left: "73%",
               color: textColor4,
             }}
           >
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
           </motion.p>
         </div>
       </div>
