@@ -35,6 +35,9 @@ function App() {
                
                 <Homepage/>
                 <Hackathon />
+                <div style={{display:'flex',color:'white',justifyContent:'center'}}>
+                  <h1 style={{fontFamily:'bakbak one',fontWeight:'100',fontSize:'50px'  }}>Club Collaborators</h1>
+                </div>
                 <div className="logos">
                   <img src={renvnza} alt="Renvnza" />
                   <img src={mulearn} alt="Mulearn ucek" />

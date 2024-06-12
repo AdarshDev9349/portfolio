@@ -6,7 +6,7 @@ function TimelinePath() {
   useEffect(() => {
     console.log(scrollYProgress);
   }, [scrollYProgress]);
-  const pathLengthFirst = useTransform(scrollYProgress, [0.5, 1], [0, 10000]);
+  const pathLengthFirst = useTransform(scrollYProgress, [0.35, 0.725], [0, 10000]);
 
   return (
     <svg

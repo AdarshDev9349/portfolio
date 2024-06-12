@@ -5,7 +5,7 @@ import logo from './logo/craftathon.svg';
 
 const Navbar = ({ menuItems }) => {
   return (
-    <nav className="navbar">
+    <nav className="navbar" style={{zIndex:'3'}}>
       <ul className='nav-menu'>
          <a href="" className="nav-logo no-space"><img src={logo} alt="Logo" /></a>
        
