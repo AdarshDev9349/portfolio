@@ -1,16 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Gugi&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap");
+@import "./components/Fonts/font.css";
 
 body {
   background-color: rgb(0, 0, 0);
   margin: 0;
   font-size: 1rem;
 }
+
 .bgimage {
-  background-image: url(./components/images/backg.svg);
-  height: 100vh;
-  background-size: cover;
+  background-image: url(./components/images/Hero.png);
+  height: 110vh;
+  background-size: fit;
   background-position: center;
+  opacity: 0.75;
 }
 
 /*Navbar*/
@@ -24,8 +27,9 @@ body {
   top: 0;
   width: 100%;
   height: 80px;
-  background-color: rgba(24, 24, 24, 0.544) ;
+  background-color: rgba(24, 24, 24, 0.544);
 }
+
 .nav-menu {
   display: flex;
   justify-content: end;
@@ -60,6 +64,7 @@ body {
 .nav-link:hover {
   letter-spacing: 0.5px;
 }
+
 .navbar button {
   padding: 12px 24px;
   border-radius: 08px;
@@ -68,6 +73,7 @@ body {
   cursor: pointer;
   color: white;
 }
+
 .navbar button:hover {
   transform: scale(1);
 }
@@ -79,6 +85,12 @@ body {
   align-items: center;
 }
 
+/* .home .subtext {
+  position: absolute;
+  top: 30rem;
+  font-size: 1rem;
+  color: #ffffff;
+} */
 .home .button-container {
   display: flex;
   width: 100%;
@@ -86,7 +98,6 @@ body {
   position: absolute;
   gap: 3rem;
   top: 35rem;
-  right: 26.5%;
 }
 
 .home img {
@@ -94,51 +105,61 @@ body {
   top: 14rem;
   width: 600px;
 }
-.home h1  {
-    font-size: 4rem;
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    gap: 1rem;
-    top: 14rem;
-    left: 100px;
-    font-family: "bakbak one";
-    background: linear-gradient(180deg, #FD8033 0%, #FCD775 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    color: transparent;
-    font-weight: 100;
-    line-height: 70px;
-    text-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5);
-  }
-  
 
+.home .herotext {
+  position: absolute;
+  gap: 1rem;
+  top: 10rem;
+  left: 20vw;
+}
+
+.home h1 {
+  font-size: 6rem;
+  font-family: "Minecraft";
+  font-weight: 100;
+  line-height: 120px;
+  text-align: center;
+  width: max-content;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.home .Orginal {
+  background: linear-gradient(180deg, #fd8033 0%, #fcd775 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  z-index: 10;
+  /* text-shadow: 0px 10px 0px #46000a; */
+}
+
+.home .Wrapper {
+  text-shadow: 0px 10px 0px #46000a;
+}
 
 .home .button1 {
-  box-sizing: border-box;
-  width: 11.25rem;
-  height: 3.375rem;
-
-  color: rgb(0, 0, 0);
-  background-color: rgba(255, 255, 255, 0.049);
-  font-family: "gugi";
+  padding: 1.2rem 3rem;
+  font-size: 1rem;
+  font-family: "Minecraft";
+  text-align: center;
   cursor: pointer;
-  background: #FFFFFF;
+  color: rgb(0, 0, 0);
+  background: #ffffff;
   border: 3px solid #000000;
-  box-shadow: inset 0px -4px 0px #251B1B, inset 0px 4px 0px #27091B;
-
+  box-shadow: inset 0px -1px 0px #251b1b, inset 0px 1px 0px #27091b;
 }
 
 .home .button2 {
-  width: 11.25rem;
-  height: 3.375rem;
-  color :white;
-  font-family: "gugi";
-
+  padding: 1.2rem 3rem;
+  font-size: 1rem;
+  color: white;
+  font-family: "Minecraft";
+  text-align: center;
   cursor: pointer;
-  background: linear-gradient(90deg, #FF0D07 0%, #FF0359 100%);
+  background: linear-gradient(90deg, #ff0d07 0%, #ff0359 100%);
   border: 3px solid #000000;
-  box-shadow: inset 0px -4px 0px #8D0D0D, inset 0px 4px 0px #EB299D;
+  box-shadow: inset 0px -1px 0px #ff0359, inset 0px 1px 0px #ff0d07;
 }
 
 /* hackathon */
@@ -148,13 +169,16 @@ body {
   color: white;
   font-family: "gugi";
   gap: 100px;
-  gap: 3rem; /* Relative gap */
+  gap: 3rem;
+  /* Relative gap */
   margin: 8rem;
 }
+
 .hack .mine {
   width: 100%;
   max-width: 500px;
 }
+
 .hack .details h1 {
   font-size: 2.563rem;
   font-family: "bakbak one";
@@ -167,6 +191,7 @@ body {
   text-align: justify;
   padding-right: 5rem;
 }
+
 .hack .details ul {
   list-style: none;
   display: flex;
@@ -175,6 +200,7 @@ body {
   gap: 0.625rem;
   padding: 0;
 }
+
 .hack .details img {
   width: 2.188rem;
   height: 2.5rem;
@@ -215,6 +241,7 @@ body {
   display: flex;
   justify-content: flex-start;
 }
+
 .time-line hr {
   border: 4px dashed rgba(255, 255, 255, 0.242);
   border-radius: 0;
@@ -225,15 +252,19 @@ body {
 .time-line hr:nth-child(1) {
   transform: rotate(60deg);
 }
+
 .time-line hr:nth-child(3) {
   transform: rotate(120deg);
 }
+
 .time-line hr:nth-child(5) {
   transform: rotate(60deg);
 }
+
 .time-line hr:nth-child(7) {
   transform: rotate(120deg);
 }
+
 .time-line hr:nth-child(9) {
   transform: rotate(60deg);
 }
@@ -252,10 +283,12 @@ body {
   font-family: "bakbak one";
   border-radius: 3px;
 }
+
 .time-line .text {
   position: absolute;
   max-width: 30ch;
 }
+
 /* .time-line .box:nth-child(2){
   top: 80px;
   background: linear-gradient(90deg, #FF0D07 0%, #FF0359 100%);
@@ -283,7 +316,8 @@ body {
   display: flex;
   align-items: center;
 
-  gap: 150px; /* Gap between image and text */
+  gap: 150px;
+  /* Gap between image and text */
   margin: 100px 180px 100px 0;
 }
 
@@ -306,6 +340,7 @@ body {
   font-weight: 100;
   color: red;
 }
+
 .section-hero .text p {
   font-size: 16px;
   line-height: 1.6;
@@ -332,7 +367,8 @@ body {
   display: flex;
   align-items: center;
   margin: 100px 0 100px 180px;
-  gap: 100px; /* Gap between image and perk list */
+  gap: 100px;
+  /* Gap between image and perk list */
   color: white;
   font-family: "bakbak one";
   text-align: justify;
@@ -344,11 +380,13 @@ body {
   font-weight: 100;
   margin-bottom: 40px;
 }
+
 .perk-list h1 span {
   font-size: 41px;
   font-weight: 100;
   color: red;
 }
+
 .perk {
   margin-bottom: 20px;
 }
@@ -384,6 +422,7 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+
 .stacks button {
   box-sizing: border-box;
   width: 150px;
@@ -406,6 +445,7 @@ body {
 .stacks p {
   color: white;
 }
+
 .stacks-each .each-stack {
   width: 240px;
   height: 240px;
@@ -477,6 +517,7 @@ body {
 .faq-footer button:hover {
   background-color: #000000;
 }
+
 /*footer*/
 
 .footer {
@@ -534,6 +575,7 @@ body {
 .footer-bottom a:hover {
   text-decoration: underline;
 }
+
 .footer img {
   width: 230px;
 }
@@ -588,15 +630,18 @@ body {
   max-width: 1200px;
   margin: 0 auto;
 }
+
 .text-container {
   max-width: 600px;
 }
+
 .text-container h1 {
   font-size: 41px;
   color: red;
   font-family: "Bakbak One";
   font-weight: 100;
 }
+
 .text-container p {
   font-size: 16px;
   line-height: 1.6;
@@ -605,25 +650,30 @@ body {
   text-align: justify;
   line-height: 28px;
 }
+
 .contact-details {
   display: flex;
   align-items: center;
   justify-content: space-between;
   max-width: 400px;
 }
+
 .contact-item {
   margin-right: 16px;
 }
+
 .contact-item strong {
   display: block;
   margin-bottom: 5px;
   font-size: 16px;
 }
+
 .instagram-icon {
   color: #fff;
   text-decoration: none;
   font-size: 2em;
 }
+
 .connect-image {
   height: 400px;
 }
