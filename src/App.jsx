@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import { motion } from "framer-motion";
 import Navbar from "./components/navbar";
 import Homepage from "./components/landing";
 import Hackathon from "./components/hackathon";
@@ -13,6 +13,7 @@ import FAQ from "./components/faq";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./index.css";
 import Footer from "./components/footer";
+import Stackinfo from "./components/stack";
 const menuItems = [
   { href: "#overview", text: "Overview" },
   { href: "#", text: "Stacks we offer" },
@@ -45,7 +46,10 @@ function App() {
                   <img src={ieee} alt="IEEE Ucek" />
                 </div>
                   <Timeline />
-                 <section id="faq"style={{paddingTop:'260px'}}> <FAQ/></section>
+                  <Stackinfo/>
+                  <section id="faq" style={{width:'20px',height:'20px',position:"relative",bottom:'260px'}}> </section>
+                  <FAQ/>
+                 
                   <Footer/>
                 
               </>
