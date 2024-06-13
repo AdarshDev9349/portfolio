@@ -95,8 +95,18 @@ const Timeline = () => {
     ["#ffffff00", "#FFffffFF"]
   );
   return (
+    
     <div ref={ref} style={{ position: "relative" }}>
       <div className="timelineContainer" style={{ position: "relative" }}>
+        <h1 style={{
+          fontFamily:'bakbak one',
+          fontWeight:'100',
+          fontSize:'50px',
+          color:"white",
+          position:'relative',
+          textAlign:'center',
+          marginBottom:"130px"
+          }}>Our Journey </h1>
         <div
           className="time-line"
           style={{ position: "sticky", top: "30%", height: "100vh" }}

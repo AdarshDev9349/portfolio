@@ -14,10 +14,10 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./index.css";
 import Footer from "./components/footer";
 const menuItems = [
-  { href: "", text: "Overview" },
+  { href: "#overview", text: "Overview" },
   { href: "#", text: "Stacks we offer" },
   { href: "#", text: "Sponsors" },
-  { href: "#", text: "FAQ" },
+  { href: "#faq", text: "FAQ" },
 ];
 function App() {
   const [count, setCount] = useState(0);
@@ -34,7 +34,7 @@ function App() {
                 <Navbar menuItems={menuItems} />
                
                 <Homepage/>
-                <Hackathon />
+               <section id="overview" style={{paddingTop:'70px'}}> <Hackathon /></section>
                 <div style={{display:'flex',color:'white',justifyContent:'center'}}>
                   <h1 style={{fontFamily:'bakbak one',fontWeight:'100',fontSize:'50px'  }}>Club Collaborators</h1>
                 </div>
@@ -45,7 +45,7 @@ function App() {
                   <img src={ieee} alt="IEEE Ucek" />
                 </div>
                   <Timeline />
-                  <FAQ/>
+                 <section id="faq"style={{paddingTop:'260px'}}> <FAQ/></section>
                   <Footer/>
                 
               </>

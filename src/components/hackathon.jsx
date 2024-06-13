@@ -5,7 +5,7 @@ import beacon from './logo/beacon.png'
 
 const hackathon = () => {
     return (
-      <div className="hack">
+      <div className="hack"id='overview'>
         <div className="details">
             <h1>Get your <span style={{color:'red'}}>crafting table</span> ready!  </h1>
              <p>Get ready for a 36-hour coding challenge that&#39;s more than just lines of code. It&#39;s a pickaxe-swinging
