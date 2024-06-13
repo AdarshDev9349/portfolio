@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import { motion } from "framer-motion";
 import Navbar from "./components/navbar";
 import Homepage from "./components/landing";
 import Hackathon from "./components/hackathon";
@@ -13,11 +13,12 @@ import FAQ from "./components/faq";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./index.css";
 import Footer from "./components/footer";
+import Stackinfo from "./components/stack";
 const menuItems = [
-  { href: "", text: "Overview" },
+  { href: "#overview", text: "Overview" },
   { href: "#", text: "Stacks we offer" },
   { href: "#", text: "Sponsors" },
-  { href: "#", text: "FAQ" },
+  { href: "#faq", text: "FAQ" },
 ];
 function App() {
   const [count, setCount] = useState(0);
@@ -34,7 +35,7 @@ function App() {
                 <Navbar menuItems={menuItems} />
                
                 <Homepage/>
-                <Hackathon />
+               <section id="overview" style={{paddingTop:'70px'}}> <Hackathon /></section>
                 <div style={{display:'flex',color:'white',justifyContent:'center'}}>
                   <h1 style={{fontFamily:'bakbak one',fontWeight:'100',fontSize:'50px'  }}>Club Collaborators</h1>
                 </div>
@@ -45,7 +46,10 @@ function App() {
                   <img src={ieee} alt="IEEE Ucek" />
                 </div>
                   <Timeline />
+                  <Stackinfo/>
+                  <section id="faq" style={{width:'20px',height:'20px',position:"relative",bottom:'260px'}}> </section>
                   <FAQ/>
+                 
                   <Footer/>
                 
               </>

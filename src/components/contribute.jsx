@@ -19,12 +19,6 @@ const CraftathonSupport = () => {
             Provision of essential resources such as food and beverages, branded items,merchandise, and promotional materials, technology and tools.
           </p>
         </div>
-        <div className="support-section">
-          <h3>Resources</h3>
-          <p>
-            Provision of essential resources such as food and beverages, branded items,merchandise, and promotional materials, technology and tools.
-          </p>
-        </div>
       </div>
     </div>
   );
