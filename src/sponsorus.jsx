@@ -4,6 +4,7 @@ import Perks from './components/perk';
 import CraftathonSupport from './components/contribute';
 import ContactSection from './components/connect';
 import Footer from './components/footer';
+import Contactus from './components/contactus';
 
 const Items = [
   {href:'',text:'Partnership'},
@@ -20,6 +21,7 @@ const Sponsorus = () => {
  <Perks/>
  <CraftathonSupport/>
  <ContactSection/>
+ <Contactus/>
  <Footer/>
 </>
 

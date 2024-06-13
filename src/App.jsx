@@ -16,7 +16,7 @@ import Footer from "./components/footer";
 import Stackinfo from "./components/stack";
 const menuItems = [
   { href: "#overview", text: "Overview" },
-  { href: "#", text: "Stacks we offer" },
+  { href: "#stacks", text: "Stacks we offer" },
   { href: "#", text: "Sponsors" },
   { href: "#faq", text: "FAQ" },
 ];
@@ -46,8 +46,9 @@ function App() {
                   <img src={ieee} alt="IEEE Ucek" />
                 </div>
                   <Timeline />
+                  <section id="stacks" style={{width:'20px',height:'20px',position:"relative",bottom:'260px'}}> </section>
                   <Stackinfo/>
-                  <section id="faq" style={{width:'20px',height:'20px',position:"relative",bottom:'260px'}}> </section>
+                  <section id="faq" style={{width:'20px',height:'20px',position:"relative",bottom:'120px'}}> </section>
                   <FAQ/>
                  
                   <Footer/>

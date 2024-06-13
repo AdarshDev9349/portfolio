@@ -3,7 +3,7 @@ const stackinfo = ()=>{
     return(
         <div className="stacks">
         <div className="heading" style={{color:'white'}}>
-            <h1 style={{fontFamily:"bakbak one",fontWeight:'100'}}>Stacks We offer</h1>
+            <h1 style={{fontFamily:"bakbak one",fontWeight:'100',fontSize:'45px'}}>Stacks We offer</h1>
             <button>Register now</button>
 
         </div>

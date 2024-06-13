@@ -1,12 +1,16 @@
 import React, { useState } from 'react';
-
+import { Link,useNavigate } from 'react-router-dom';
 const FAQ = () => {
   const [open, setOpen] = useState(null);
+  const navigate = useNavigate();
 
   const toggle = (index) => {
     setOpen(open === index ? null : index);
   };
-
+  const handleContactUsClick = () => {
+    navigate('/sponsor-us');
+    window.scrollTo(0, 0);
+  };
   return (
     <div className="faq-container">
       <h1 style={{fontFamily:'bakbak one',fontWeight:'100'}}>Frequently Asked Questions</h1>
@@ -26,7 +30,7 @@ const FAQ = () => {
       <div className="faq-footer">
         <h2>Still have a question?</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        <button>Contact Us</button>
+        <button onClick={handleContactUsClick}>Contact Us</button>
       </div>
     </div>
   );

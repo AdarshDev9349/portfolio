@@ -1,5 +1,5 @@
 
-import image2 from './images/charac.svg'
+import image2 from './images/charac.png'
 
 
 const CraftathonPartnership = () => {
