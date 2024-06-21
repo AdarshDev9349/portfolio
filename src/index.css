@@ -7,7 +7,6 @@ html {
 body {
   background-color: rgb(0, 0, 0);
   margin: 0;
-  font-size: 1rem;
 }
 
 .bgimage {
@@ -25,8 +24,7 @@ body {
   justify-content: center;
   align-items: flex-start;
   flex-wrap: wrap;
-  position: fixed;
-  top: 0;
+  position: sticky;
   width: 100%;
   height: 80px;
   background-color: rgba(24, 24, 24, 0.544);
@@ -79,7 +77,19 @@ body {
 .navbar button:hover {
   transform: scale(1);
 }
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
 
+.nav-toggle span {
+  background: #fff;
+  margin: 4px 0;
+  width: 25px;
+  height: 2px;
+  transition: all 0.3s ease;
+}
 /*landing*/
 .home {
   display: flex;
@@ -794,3 +804,123 @@ input[type="submit"] {
   color: #fff;
   text-decoration: none;
 }
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+
+}
+
+.nav-toggle span {
+  background: #fff;
+  margin: 4px 0;
+  width: 25px;
+  height: 2px;
+  transition: all 0.3s ease;
+}
+@media (max-width: 768px) {
+
+
+  .navbar {
+  
+    width: 100%;
+    justify-content:end ;
+    align-items: center;
+    padding: 12px;
+    
+  }
+  .bgimage{
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .nav-menu {
+
+    background: rgba(24, 24, 24, 0.9);
+    position: fixed;
+    left: -100%;
+    top: 0;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #0f1923;
+    width: 260px;
+    height: 100vh;
+    text-align: center;
+    transition: 0.3s;
+    
+    gap: 60px;
+  
+  }
+
+  .nav-menu.active {
+    left: 0;
+    z-index: 10;
+  }
+
+  .nav-toggle {
+    display: flex;
+    margin-right: 25px;
+   
+
+  }
+
+  .nav-toggle.open span:nth-child(1) {
+    transform: rotate(45deg) translateY(13px) translateX(4px);
+    width: 37px;
+  
+  }
+
+  .nav-toggle.open span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .nav-toggle.open span:nth-child(3) {
+    transform: rotate(-45deg) translateY(-10px);
+    width: 37px;
+  }
+
+  .nav-link {
+    font-size: 1rem;
+    margin: 0;
+  }
+
+  .nav-menu img {
+    position: static;
+    max-width: 180px;
+  }
+  .home .button-container{
+    z-index: -1;
+    top: 54%;
+  }
+  
+.footer img{
+  display: none
+}
+.home h1{
+  font-size: 3.5rem;
+  line-height: 50px;
+  margin-left: 0;
+
+}
+.home .herotext{
+
+  z-index: -1;
+  margin: 43px;
+  left: 0;
+  top: 28%;
+}
+  
+
+.faq-container{
+  margin: 0;
+}
+.stacks{
+  margin: 0;
+  
+}
+.footer-links, .social-media, .contact-info{
+  margin: -3px 0px;
+}
+}
+

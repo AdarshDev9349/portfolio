@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState,useRef } from 'react';
 
 
 function Contactus() {
@@ -18,18 +18,34 @@ function Contactus() {
             [name]: value
         });
     };
-
+    const formRef = useRef(null);
+    const scriptUrl =
+      "https://script.google.com/macros/s/AKfycbwjVjmYx2eH3-Yi5CSj_77A838emigolbp6nxaJhW3c3mOD2YBeN7pqh5ThXKDVmf5S/exec";
+  
     const handleSubmit = (e) => {
-        e.preventDefault();
-        // Handle form submission
-        console.log(formData);
+      e.preventDefault();
+     
+      fetch(scriptUrl, {
+        method: "POST",
+        credentials: "include",
+        mode: "cors",
+        body: new FormData(formRef.current)
+      })
+        .then((res) => {
+          console.log(res);
+        })
+        .catch((err) => console.log(err))
+        .finally(() => {
+          alert("Form Submited Successfully");
+    })
     };
-
     return (
         <div className="containerX">
             <h1>Get In Touch <span>With Us</span></h1>
             <p>We're excited to hear from you! Whether you have questions, feedback, or are interested in partnership opportunities, please fill out the form below, and we'll get back to you as soon as possible.</p>
-            <form onSubmit={handleSubmit}>
+            <form 
+            ref={formRef}
+            onSubmit={handleSubmit}>
                 <div className="form-group row">
                     <input 
                         type="text" 

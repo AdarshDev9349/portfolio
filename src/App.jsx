@@ -31,10 +31,10 @@ function App() {
             path="/"
             element={
               <>
-                <div className="bgimage"> </div>
+                <div className="bgimage"> 
                 <Navbar menuItems={menuItems} />
                
-                <Homepage/>
+                <Homepage/></div>
                <section id="overview" style={{paddingTop:'70px'}}> <Hackathon /></section>
                 <div style={{display:'flex',color:'white',justifyContent:'center'}}>
                   <h1 style={{fontFamily:'bakbak one',fontWeight:'100',fontSize:'50px'  }}>Club Collaborators</h1>
