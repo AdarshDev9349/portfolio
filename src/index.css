@@ -826,7 +826,8 @@ input[type="submit"] {
     width: 100%;
     justify-content:end ;
     align-items: center;
-    padding: 12px 0;
+    height: 60px;
+   
     
   }
   .bgimage{
@@ -856,11 +857,13 @@ input[type="submit"] {
   .nav-menu.active {
     left: 0;
     z-index: 10;
+    top: -22px;
   }
 
   .nav-toggle {
     display: flex;
-    margin-right: 25px;
+    margin-right: 20px;
+  
    
 
   }
@@ -891,22 +894,38 @@ input[type="submit"] {
   }
   .home .button-container{
     z-index: -1;
-    top: 54%;
+    top: 59%;
   }
+
+  .home .button1{
+    padding: 0.8rem;
+    font-size: 1rem;
+    font-family: 'gugi';
+   }
   
+    .home .button2{
+      width: auto;
+      height: auto;
+      padding: 0.8rem;
+      
+      
+    }
 .footer img{
   display: none
 }
 .home h1{
-  font-size: 1rem;
-  line-height: 50px;
+  font-size: 2rem;
+  line-height: 30px;
   margin-left: 0;
 
+}
+.home .Wrapper{
+  display: none;
 }
 .home .herotext{
 
   z-index: -1;
-  margin: 43px;
+  margin: 35px;
   left: 0;
   top: 28%;
 }
@@ -921,6 +940,22 @@ input[type="submit"] {
 }
 .footer-links, .social-media, .contact-info{
   margin: -3px 0px;
+}
+.hack .mine{
+  display: none;
+}
+.hack {
+  margin: 0;
+  padding: 15px;
+}
+.hack .details h1 {
+  font-size: 2rem;
+  
+ 
+}
+.hack .details p {
+padding-right: 0;
+ 
 }
 }
 
