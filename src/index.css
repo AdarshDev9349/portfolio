@@ -10,7 +10,7 @@ body {
 }
 
 .bgimage {
-  background-image: url(./components/images/Hero.png);
+
   height: 110vh;
   background-size: fit;
   background-position: center;
@@ -124,7 +124,6 @@ body {
   top: 20%;
   margin-left: 20%;
   margin-right: 80%;
- 
 }
 
 .home h1 {
@@ -153,15 +152,14 @@ body {
 }
 
 .home .button1 {
-  padding: 1.2rem 3rem;
-  font-size: 1rem;
-  font-family: "Minecraft";
-  text-align: center;
+  width: 11.25rem;
+  height: 3.375rem;
+  color: white;
+  font-family: "gugi";
   cursor: pointer;
-  color: rgb(0, 0, 0);
-  background: #ffffff;
+  background: linear-gradient(90deg, #ff0d07 0%, #ff0359 100%);
   border: 3px solid #000000;
-  box-shadow: inset 0px -1px 0px #251b1b, inset 0px 1px 0px #27091b;
+  box-shadow: inset 0px -1px 0px #ff0359, inset 0px 1px 0px #ff0d07;
 }
 
 .home .button2 {
@@ -228,17 +226,32 @@ body {
 /* logos */
 
 .logos {
-  display: flex;
+  display: grid;
   flex-wrap: wrap;
+  grid-template-columns: repeat(4, 1fr);
   justify-content: center;
   gap: 7rem;
-  margin: 1rem 1rem 12.5rem 1rem;
+  align-items: center;
 }
 
 .logos img {
   width: 100%;
   max-width: 230px;
   cursor: pointer;
+  justify-self: center;
+}
+.logos img:nth-child(1) {
+  width: 180px;
+}
+.logohead {
+  display: flex;
+  color: white;
+  justify-content: center;
+}
+.logohead h1 {
+  font-family: "bakbak one";
+  font-weight: 100;
+  font-size: 50px;
 }
 
 /* timeline */
@@ -250,7 +263,7 @@ body {
 
 .time-line {
   width: 100vw;
-  height: 100%;
+
   display: flex;
   justify-content: flex-start;
 }
@@ -696,7 +709,6 @@ body {
   height: 400px;
 }
 
-
 /*contact us*/
 
 .containerX {
@@ -707,7 +719,7 @@ body {
 }
 
 .containerX h1 {
-  font-family: 'Bakbak One', cursive;
+  font-family: "Bakbak One", cursive;
   font-size: 52px;
   font-weight: 400;
   line-height: 100.8px;
@@ -720,7 +732,7 @@ body {
 }
 
 .containerX p {
-  font-family: 'Gugi', cursive;
+  font-family: "Gugi", cursive;
   font-size: 16px;
   font-weight: 400;
   line-height: 35px;
@@ -732,26 +744,24 @@ body {
   margin-bottom: 20px;
 }
 
-
 .containerX .row {
   display: flex;
   justify-content: space-between;
- 
-  
 }
 
-
-.containerX input, select, textarea {
+.containerX input,
+select,
+textarea {
   width: calc(50% - 10px);
   padding: 19px;
   margin: 5px;
-  
+
   box-sizing: border-box;
-  background: #0D0D0D;
+  background: #0d0d0d;
   color: #fff;
   border: none;
 }
-.containerX input{
+.containerX input {
   width: 100%;
 }
 
@@ -780,7 +790,6 @@ input[type="submit"] {
   background-color: rgba(0, 0, 0, 0.464);
   font-family: "gugi";
   cursor: pointer;
- 
 }
 
 .containerX footer {
@@ -788,19 +797,24 @@ input[type="submit"] {
   margin-top: 40px;
 }
 
-
-.footer-links, .social-media, .contact-info {
+.footer-links,
+.social-media,
+.contact-info {
   display: inline-block;
   vertical-align: top;
   margin: 0 20px;
 }
 
-.footer-links ul, .social-media ul, .contact-info ul {
+.footer-links ul,
+.social-media ul,
+.contact-info ul {
   list-style-type: none;
   padding: 0;
 }
 
-.footer-links a, .social-media a, .contact-info a {
+.footer-links a,
+.social-media a,
+.contact-info a {
   color: #fff;
   text-decoration: none;
 }
@@ -808,7 +822,6 @@ input[type="submit"] {
   display: none;
   flex-direction: column;
   cursor: pointer;
-
 }
 
 .nav-toggle span {
@@ -819,25 +832,19 @@ input[type="submit"] {
   transition: all 0.3s ease;
 }
 @media (max-width: 768px) {
-
-
   .navbar {
-  
     width: 100%;
-    justify-content:end ;
+    justify-content: end;
     align-items: center;
     height: 60px;
-   
-    
   }
-  .bgimage{
+  .bgimage {
     background-size: cover;
     display: flex;
     align-items: center;
     flex-direction: column;
   }
   .nav-menu {
-
     background: rgba(24, 24, 24, 0.9);
     position: fixed;
     left: -100%;
@@ -849,9 +856,8 @@ input[type="submit"] {
     height: 100vh;
     text-align: center;
     transition: 0.3s;
-    
+
     gap: 60px;
-  
   }
 
   .nav-menu.active {
@@ -863,15 +869,11 @@ input[type="submit"] {
   .nav-toggle {
     display: flex;
     margin-right: 20px;
-  
-   
-
   }
 
   .nav-toggle.open span:nth-child(1) {
     transform: rotate(45deg) translateY(13px) translateX(4px);
     width: 37px;
-  
   }
 
   .nav-toggle.open span:nth-child(2) {
@@ -892,70 +894,88 @@ input[type="submit"] {
     position: static;
     max-width: 180px;
   }
-  .home .button-container{
+  .home .button-container {
     z-index: -1;
     top: 59%;
   }
-
-  .home .button1{
+  .logos {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 0;
+  }
+  .logos img {
+    width: 130px;
+    justify-self: center;
+  }
+  .logos img:nth-child(1) {
+    width: 110px;
+  }
+  .home .button1 {
     padding: 0.8rem;
     font-size: 1rem;
-    font-family: 'gugi';
-   }
-  
-    .home .button2{
-      width: auto;
-      height: auto;
-      padding: 0.8rem;
-      
-      
+    font-family: "gugi";
+  }
+
+  .home .button2 {
+    width: auto;
+    height: auto;
+    padding: 0.8rem;
+
+    #overview {
+      margin-top: 0;
     }
-.footer img{
-  display: none
-}
-.home h1{
-  font-size: 2rem;
-  line-height: 30px;
-  margin-left: 0;
+  }
 
-}
-.home .Wrapper{
-  display: none;
-}
-.home .herotext{
 
-  z-index: -1;
-  margin: 35px;
-  left: 0;
-  top: 28%;
-}
-  
+  .time-line img{
+    display: none;
+  }
+  .footer img {
+    display: none;
+  }
+  .home h1 {
+    font-size: 2rem;
+    line-height: 30px;
+    margin-left: 0;
+  }
+  .home .Wrapper {
+    display: none;
+  }
+  .home .herotext {
+    z-index: -1;
+    margin: 35px;
+    left: 0;
+    top: 28%;
+  }
 
-.faq-container{
-  margin: 0;
+  .faq-container {
+    margin: 0;
+  }
+  .stacks {
+    margin: 0;
+  }
+  .footer-links,
+  .social-media,
+  .contact-info {
+    margin: -3px 0px;
+  }
+  .hack .mine {
+    display: none;
+  }
+  .hack {
+    margin: 0;
+    padding: 15px;
+  }
+  .hack .details h1 {
+    font-size: 2rem;
+  }
+  .hack .details p {
+    padding-right: 0;
+  }
+  .logohead {
+    text-align: center;
+  }
+  .logohead h1 {
+    font-size: 2rem;
+  }
 }
-.stacks{
-  margin: 0;
-  
-}
-.footer-links, .social-media, .contact-info{
-  margin: -3px 0px;
-}
-.hack .mine{
-  display: none;
-}
-.hack {
-  margin: 0;
-  padding: 15px;
-}
-.hack .details h1 {
-  font-size: 2rem;
-  
- 
-}
-.hack .details p {
-padding-right: 0;
- 
-}
-}
-

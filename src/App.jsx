@@ -36,8 +36,8 @@ function App() {
                
                 <Homepage/></div>
                <section id="overview" style={{paddingTop:'70px'}}> <Hackathon /></section>
-                <div style={{display:'flex',color:'white',justifyContent:'center'}}>
-                  <h1 style={{fontFamily:'bakbak one',fontWeight:'100',fontSize:'50px'  }}>Club Collaborators</h1>
+                <div className='logohead'>
+                  <h1>Club Collaborators</h1>
                 </div>
                 <div className="logos">
                   <img src={renvnza} alt="Renvnza" />
