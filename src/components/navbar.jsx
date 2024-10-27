@@ -1,17 +1,17 @@
 'use client'
 
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { Dialog, DialogPanel } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Link as Scroll } from 'react-scroll';
+import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 
 const navigation = [
-  { name: 'Home', href: '#',to:'home' },
-  { name: 'About', href: '#about',to:'about' },
-  { name: 'Projects', href: '#',to:'stacks' },
-  { name: 'Resume', href: '#',to:'time' },
-  { name: 'Contact', href: '#',to:'faq' },
+  { name: 'Home', href: '/home' },    // Update href to route path
+  { name: 'About', href: '/about' },  // Update href to route path
+  { name: 'Projects', href: '/project' }, // Update href to route path
+  { name: 'Resume', href: '/resume' }, // Update href to route path
+  { name: 'Contact', href: '/contact' }, // Update href to route path
 ];
 
 const itemVariants = {
@@ -44,15 +44,14 @@ const menuVariants = {
   }
 };
 
-
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header  className="home fixed inset-x-0  top-0 z-50 lg:flex w-full justify-center"style={{  background: 'rgba(2, 11, 18,0.6)' }}>
+    <header className="home fixed inset-x-0 top-0 z-50 lg:flex w-full justify-center" style={{ background: 'rgba(2, 11, 18,0.6)' }}>
       <nav aria-label="Global" className="flex items-center justify-between p-6 lg:px-8">
         <div className="flex lg:flex-1">
-         
+          {/* You can add a logo or brand name here */}
         </div>
         <div className="flex lg:hidden">
           <button
@@ -66,14 +65,13 @@ export default function Navbar() {
         </div>
         <div className="hidden lg:flex lg:gap-x-16">
           {navigation.map((item) => (
-            <Scroll to={item.to} smooth={true}>
-            <a key={item.name} href={item.href} className="text-m font-semibold leading-6 text-white transform transition duration-500 hover:scale-105">
-              {item.name}
-            </a>
-            </Scroll>
+            <Link key={item.name} to={item.href}>
+              <span className="text-m font-semibold leading-6 text-white transform transition duration-500 hover:scale-105">
+                {item.name}
+              </span>
+            </Link>
           ))}
         </div>
-
       </nav>
 
       <AnimatePresence>
@@ -81,17 +79,20 @@ export default function Navbar() {
           <Dialog as={motion.div} open={mobileMenuOpen} onClose={setMobileMenuOpen} className="lg:hidden">
             <motion.div className="fixed inset-0 z-50 bg-black bg-opacity-50" />
             <div className="fixed inset-0 z-50 flex items-center justify-center">
-              <DialogPanel as={motion.div} initial="closed" animate="open" exit="closed" variants={menuVariants}  className="w-3/4 max-w-sm overflow-y-auto bg-white px-10  sm:ring-1 sm:ring-gray-900/10">
+              <DialogPanel
+                as={motion.div}
+                initial="closed"
+                animate="open"
+                exit="closed"
+                variants={menuVariants}
+                className="w-3/4 max-w-sm overflow-y-auto bg-white px-10 sm:ring-1 sm:ring-gray-900/10"
+              >
                 <div className="flex items-center justify-between">
-                  <a href="#" className="-m-1.5 p-1.5">
-                    <span className="sr-only">Your Company</span>
-                    {/* Add your logo here */}
-                  </a>
                   <motion.button
-                  variants={itemVariants}
+                    variants={itemVariants}
                     type="button"
                     onClick={() => setMobileMenuOpen(false)}
-                    className="relative top-12 rounded-md  text-gray-700"
+                    className="relative top-12 rounded-md text-gray-700"
                   >
                     <span className="sr-only">Close menu</span>
                     <XMarkIcon aria-hidden="true" className="h-6 w-6" />
@@ -105,12 +106,9 @@ export default function Navbar() {
                   <div className="space-y-2 py-6">
                     {navigation.map((item) => (
                       <motion.li key={item.name} variants={itemVariants}>
-                        <Scroll to={item.to} smooth={true}><a
-                          href={item.href}
-                          className="-mx-3 block flex justify-center rounded-lg px-3 py-2 text-base font-semibold leading-7 text-lg text-gray-900 hover:bg-gray-50"
-                        >
+                        <Link to={item.href} className="-mx-3 block flex justify-center rounded-lg px-3 py-2 text-base font-semibold leading-7 text-lg text-gray-900 hover:bg-gray-50">
                           {item.name}
-                        </a></Scroll>
+                        </Link>
                       </motion.li>
                     ))}
                   </div>
