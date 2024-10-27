@@ -16,7 +16,7 @@ const MainPage = () => {
           <img
             src={profilePic}
             alt="Adarsh Dev"
-            className=" w-48 h-48 md:w-[350px] md:h-[270px] border-4 border-gray-700 shadow-lg"
+            className=" w-[350px] md:w-[350px] md:h-[270px] border-4 border-gray-700 shadow-lg"
           />
         </motion.div>
 

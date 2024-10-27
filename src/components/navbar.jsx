@@ -51,13 +51,13 @@ export default function Navbar() {
     <header className="home fixed inset-x-0 top-0 z-50 lg:flex w-full justify-center" style={{ background: 'rgba(2, 11, 18,0.6)' }}>
       <nav aria-label="Global" className="flex items-center justify-between p-6 lg:px-8">
         <div className="flex lg:flex-1">
-          {/* You can add a logo or brand name here */}
+         
         </div>
         <div className="flex lg:hidden">
           <button
             type="button"
             onClick={() => setMobileMenuOpen(true)}
-            className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
+            className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-white"
           >
             <span className="sr-only">Open main menu</span>
             <Bars3Icon aria-hidden="true" className="h-6 w-6" />
