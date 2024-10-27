@@ -7,7 +7,7 @@ import logo4 from "./img/github.svg";
 
 const Footer = () => {
   return (
-    <footer className="footer bg-black text-white py-14 border-y">
+    <footer className="footer bg-black text-white py-8 md:py-14 border-y">
       
       <br></br>
       <motion.div
@@ -23,12 +23,13 @@ const Footer = () => {
         >
           <h2 className="text-xl font-bold mb-4">Social Media</h2>
           <div className="logo flex gap-6">
-            <motion.img
+          <a href="https://www.instagram.com/adarsh_dev_achu/"> 
+          <motion.img
               src={logo1}
               alt="Instagram"
               whileHover={{ scale: 1.2 }}
               className="w-8 h-8"
-            />
+            /></a> 
             <motion.img
               src={logo2}
               alt="Twitter"
@@ -52,7 +53,7 @@ const Footer = () => {
 
         {/* Quick Links Section */}
         <motion.div
-          className="quick-links flex flex-col items-center"
+          className="quick-links hidden  md:flex flex-col items-center "
           whileHover={{ scale: 1.05 }}
         >
           <h2 className="text-xl font-bold mb-4">Quick Links</h2>
