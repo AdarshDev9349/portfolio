@@ -2,6 +2,7 @@ import Navbar from "./components/navbar";
 import MainPage from "./components/hero";
 import ProjectSection from "./components/project";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import ContactForm from "./components/contact";
 import "./index.css";
 import Footer from "./components/footer";
 
@@ -23,6 +24,8 @@ function App() {
           <Route path="/" element={<MainPage />} />
           <Route path="/home" element={<MainPage />} />
           <Route path="/project" element={<ProjectSection />} />
+         
+          <Route path="/contact" element={<ContactForm />} />
         </Routes>
 
         <Footer />
