@@ -19,7 +19,7 @@ const projects = [
     title: "Fighub",
     description: "A website made with django and figma api for designers to showcase their work.",
     github: "https://github.com/adarshdev9349/fig_hub",
-    demo: "designers-hub.vercel.app"
+    demo: "https://designers-hub.vercel.app"
   }
 ];
 
